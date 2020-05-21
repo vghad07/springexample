@@ -30,12 +30,12 @@
     <repository>
       <id>spring-releases</id>
       <name>spring-releases</name>
-      <url>http://172.31.36.49:8081/nexus/content/repositories/spring-releases/</url>
+      <url>http://13.232.114.141:8081/nexus/content/repositories/spring-releases/</url>
     </repository>
     <snapshotRepository>
       <id>spring-snapshots</id>
       <name>spring-snapshots</name>
-      <url>http://172.31.36.49:8081/nexus/content/repositories/spring-snapshots/</url>
+      <url>http://13.232.114.141:8081/nexus/content/repositories/spring-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </profile>
@@ -45,12 +45,12 @@
     <repository>
       <id>vcard-releases</id>
       <name>vcard-releases</name>
-      <url>http://172.31.36.49:8081/nexus/content/repositories/vcard-releases/</url>
+      <url>http://13.232.114.141:8081/nexus/content/repositories/vcard-releases/</url>
     </repository>
     <snapshotRepository>
       <id>vcard-snapshots</id>
       <name>vcard-snapshots</name>
-      <url>http://172.31.36.49:8081/nexus/content/repositories/vcard-snapshots/</url>
+      <url>http://13.232.114.141:8081/nexus/content/repositories/vcard-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </profile>
