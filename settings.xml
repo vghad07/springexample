@@ -1,20 +1,5 @@
- <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                      https://maven.apache.org/xsd/settings-1.0.0.xsd">
- <!-- <servers>
-    <server>
-      <id>demo1-release</id>
-      <username>vikas-user</username>
-      <password>nexus</password>
-    </server>
-<server>
-     <id>demo1-snapshot</id>
-      <username>vikas-user</username>
-      <password>nexus</password>
-    </server>
-  </servers> -->
-<pluginGroups>
+<settings>
+    <pluginGroups>
         <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
     </pluginGroups>
     <profiles>
@@ -26,7 +11,7 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                  http://http://18.207.130.169:9000/
+                  http://3.235.65.222:9000
                 </sonar.host.url>
             </properties>
         </profile>
