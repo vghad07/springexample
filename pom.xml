@@ -45,7 +45,31 @@
         	<source>1.6</source>
         	<target>1.6</target>
     		</configuration>
-</plugin>
+	</plugin>
+    <plugin> 
+    <groupId>com.oracle.weblogic</groupId> 
+        <artifactId>weblogic-maven-plugin</artifactId> 
+        <version>10.3.4</version> 
+        <configuration> 
+            <adminurl>t3://http://3.235.65.222:49163/</adminurl>
+            <user>weblogic</user> 
+            <password>welcome1</password> 
+            <upload>true</upload> 
+            <action>deploy</action> 
+            <remote>false</remote> 
+            <verbose>true</verbose> 
+            <source>../target/SpringExample-2.0.0.war</source> 
+            <name>${project.build.finalName}</name> 
+        </configuration> 
+        <executions> 
+            <execution> 
+                <phase>install</phase> 
+                <goals> 
+                    <goal>deploy</goal> 
+                </goals> 
+            </execution> 
+        </executions> 
+    </plugin> 
 </plugins>
   </build>
 
