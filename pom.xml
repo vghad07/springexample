@@ -51,14 +51,14 @@
         <artifactId>weblogic-maven-plugin</artifactId> 
         <version>10.3.4</version> 
         <configuration> 
-            <adminurl>t3://http:/3.236.6.89:49163/</adminurl>
+            <adminurl>t3://http://3.236.6.89:49163/</adminurl>
             <user>weblogic</user> 
             <password>welcome1</password> 
             <upload>true</upload> 
             <action>deploy</action> 
             <remote>false</remote> 
             <verbose>true</verbose> 
-            <source>../target/SpringExample-2.0.0.war</source> 
+            <source>**/*.war</source> 
             <name>${project.build.finalName}</name> 
         </configuration> 
         <executions> 
