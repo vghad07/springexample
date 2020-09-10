@@ -50,7 +50,6 @@
     <groupId>com.oracle.weblogic</groupId> 
         <artifactId>weblogic-maven-plugin</artifactId> 
         <version>10.3.6.0</version> 
-	<packaging>maven-plugin</packaging>
         <configuration> 
             <adminurl>t3://http://3.237.20.163:49163/</adminurl>
             <user>weblogic</user> 
