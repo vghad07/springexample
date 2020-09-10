@@ -75,8 +75,8 @@
 
 <profiles>
 <profile>
-     <id>spring-deploy</id>
- <!--<distributionManagement>
+     <!--<id>spring-deploy</id>
+ <distributionManagement>
     <repository>
       <id>spring-releases</id>
       <name>spring-releases</name>
