@@ -46,7 +46,7 @@
         	<target>1.6</target>
     		</configuration>
 	</plugin>
-    <plugin> 
+   <!-- <plugin> 
     <groupId>com.oracle.weblogic</groupId> 
         <artifactId>weblogic-maven-plugin</artifactId> 
         <version>10.3.6.0</version> 
@@ -69,7 +69,7 @@
                 </goals> 
             </execution> 
         </executions> 
-    </plugin> 
+    </plugin> --> 
 </plugins>
   </build>
 
