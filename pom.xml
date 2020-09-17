@@ -30,8 +30,8 @@
   </dependencies>
   
 <build>
-<plugins>
 	<sourceDirectory>src</sourceDirectory>
+<plugins>
         <plugins>
             <plugin>
 		<groupId>org.apache.maven.plugins</groupId>
