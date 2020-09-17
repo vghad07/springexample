@@ -14,6 +14,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+	
+	<dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>2.5</version>
+    </dependency>
     
     <!-- Spring framework -->
 	<dependency>
@@ -22,30 +28,36 @@
 		<version>2.5.6</version>
 	</dependency> 
   </dependencies>
+  
 <build>
 <plugins>
+	<sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.6</version>
+                <configuration>
+                    <warSourceDirectory>WebContent</warSourceDirectory>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
 
-	<plugin>
-		<groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-war-plugin</artifactId>
-		<version>2.6</version>
-		<configuration>
-			<failOnMissingWebXml>false</failOnMissingWebXml>
-		</configuration>
-	</plugin>
-	<plugin>
+			<plugin>
         	<groupId>org.sonarsource.scanner.maven</groupId>
        	 	<artifactId>sonar-maven-plugin</artifactId>
         	<version>3.7.0.1746</version>
-      </plugin>
-	<plugin>
-    		<groupId>org.apache.maven.plugins</groupId>
-    		<artifactId>maven-compiler-plugin</artifactId>
-    		<configuration>
-        	<source>1.6</source>
-        	<target>1.6</target>
-    		</configuration>
-	</plugin>
+			</plugin>
+	
    <!-- <plugin> 
     <groupId>com.oracle.weblogic</groupId> 
         <artifactId>weblogic-maven-plugin</artifactId> 
@@ -70,8 +82,9 @@
             </execution> 
         </executions> 
     </plugin> --> 
-</plugins>
-  </build>
+	
+	</plugins>
+ </build>
 
 <profiles>
 <profile>
