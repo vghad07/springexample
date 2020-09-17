@@ -31,7 +31,6 @@
   
 <build>
 	<sourceDirectory>src</sourceDirectory>
-<plugins>
         <plugins>
             <plugin>
 		<groupId>org.apache.maven.plugins</groupId>
@@ -51,7 +50,6 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
-
 		<plugin>
         	<groupId>org.sonarsource.scanner.maven</groupId>
        	 	<artifactId>sonar-maven-plugin</artifactId>
@@ -83,7 +81,7 @@
         </executions> 
     </plugin> --> 
 	
-	</plugins>
+		</plugins>
  </build>
 
 <profiles>
