@@ -4,6 +4,10 @@ LABEL maintainer="vikas.ghadage143@gmail.com"
 
 WORKDIR /usr/local/tomcat
 
+RUN rm -f /usr/local/tomcat/conf/tomcat-users.xml 
+
+COPY tomcat-users.xml /usr/local/tomcat/conf/
+
 ADD target/*.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
