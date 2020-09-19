@@ -13,6 +13,8 @@
                 <sonar.host.url>
                   http://34.204.183.157:9000
                 </sonar.host.url>
+                <sonar.sources>src/main/java</sonar.sources>
+                <sonar.tests>src/test/java</sonar.tests>
             </properties>
         </profile>
      </profiles>
