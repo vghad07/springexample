@@ -48,7 +48,7 @@
                 <version>2.6</version>
                 <configuration>
                    <!-- <warSourceDirectory>WebContent</warSourceDirectory> -->
-			<warSourceDirectory>src/*</warSourceDirectory>
+			<warSourceDirectory>src/main/java</warSourceDirectory>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
