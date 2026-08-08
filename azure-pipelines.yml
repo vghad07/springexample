@@ -14,7 +14,7 @@ steps:
   inputs:
     azureSubscription: 'Azure subscription 1(87d973c5-1ffd-45e0-8435-6f52ef9a36d9)'
     mavenPomFile: 'pom.xml'
-    goals: 'clean package'
+    goals: 'package'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
